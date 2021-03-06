@@ -27,3 +27,7 @@ while 1:
     y_test_pred=ML.predict(Test)
     print('SVM result:')
     print(outcome[y_test_pred])
+    if outcome[y_test_pred] == falling:
+         device.write("f")
+    else:
+        device.write("n")
