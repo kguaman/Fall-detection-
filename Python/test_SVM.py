@@ -28,8 +28,7 @@ ML = svm.SVC(kernel = 'rbf',gamma = .01,C= 1).fit(X_train,Y_train)
 '''
 compare the real-time data from the senor to the SVM 
 '''
-outcome = ["standing", "laying", "sitting", "walking", "upstairs", "downstairs", "falling"]
-
+outcome = ['standing', 'laying', 'sitting', 'walking', 'upstairs', 'downstairs', 'falling']
 device = serial.Serial('COM5',baudrate = 115200)
 
 while 1:
@@ -57,6 +56,10 @@ while 1:
     y_test_pred=ML.predict(Test)
     print('SVM result:')
     print(outcome[y_test_pred])
+    if outcome[y_test_pred] == 'falling':
+         device.write("f")
+    else:
+        device.write("n")
 
 
 '''
