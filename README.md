@@ -11,6 +11,11 @@
 
 <h2>Goal</h2>
 Many fall detection devices either have low accuracy when it comes to detecting falls or requires the user to press a button. I plan to create a device that has an high accuracy in fall dection.
+<h2>Components</h2>
+<h3>Arduino</h3>
+<h3>MPU sensor</h3>
+<h3>Leds </h3>
+
 
 <h2>Resources</h2>
 <ul>
@@ -22,7 +27,6 @@ Many fall detection devices either have low accuracy when it comes to detecting 
  status: Complete 
 
 <h2>Credits</h2>
-
 - Author: Kelvin Guaman
 
 
