@@ -26,7 +26,8 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 ML = svm.SVC(kernel = 'rbf',gamma = .01,C= 1).fit(X_train,Y_train)
 '''
-compare the real-time data from the senor to the SVM 
+compare the real-time data from the senor to the SVM line 32-63
+comment this out and uncomment code from line 67-82
 '''
 outcome = ['standing', 'laying', 'sitting', 'walking', 'upstairs', 'downstairs', 'falling']
 device = serial.Serial('COM5',baudrate = 115200)
@@ -63,8 +64,8 @@ while 1:
 
 
 '''
-display a table actual col and Predicted col 
-use to check accuarcy of SVM :
+#display a table actual col and Predicted col 
+#use to check accuarcy of SVM :
 
 y_test_pred=ML.predict(X_test)
 y_test_pred
