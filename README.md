@@ -24,7 +24,8 @@ Many fall detection devices either have low accuracy when it comes to detecting 
 </ul>  
 
 <h2>Project status</h2>
- status: Complete 
+ status: the current accuracy is 94%.
+<p>I might come back to check if other features can improve its accuracy and try to utilize a Bluetooth module so the device can be portable. </p>
 
 <h2>Credits</h2>
 - Author: Kelvin Guaman
