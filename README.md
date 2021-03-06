@@ -12,7 +12,7 @@ Many fall detection devices either have low accuracy when it comes to detecting 
   <h3>Arduino</h3>
     <img src="https://user-images.githubusercontent.com/80166775/110216195-b6ed1500-7e7b-11eb-8f5b-3a47efa29033.jpg"></div>
 
-  <h3>MPU sensor</h3>
+  <h3>MPU sensor (2x) </h3>
     <img src="https://user-images.githubusercontent.com/80166775/110216216-e0a63c00-7e7b-11eb-9adf-3578d409f8a1.jpg"></div>
 
   <h3>Leds</h3>
