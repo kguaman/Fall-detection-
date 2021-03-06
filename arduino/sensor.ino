@@ -2,6 +2,7 @@
   Kelvin Fall 2020
   reading sensor data
   adafruit library was implemented to read sensor data
+  link: https://github.com/adafruit/Adafruit_ICM20X
   note: if another MPU is used code would need to be adjusted
 */
 #include <Adafruit_ICM20948.h>
