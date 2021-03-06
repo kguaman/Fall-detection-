@@ -11,6 +11,9 @@
 #include <Wire.h>
 #include <math.h>
 
+int LED_Non_Fall= 7; 
+int LED_Fall = 8; 
+
 Adafruit_Sensor *accel2,*accel;
 
 const float RAD2DEG = 180.0f / PI;
@@ -39,11 +42,14 @@ Adafruit_ICM20948 icm;
 Adafruit_ICM20948 icm2;
 
 void setup(void) {
+  
+  pinMode(LED_Non_Fall,OUTPUT); 
+  pinMode(LED_Fall,OUTPUT); 
+  digitalWrite(LED_Non_Fall,HIGH);
+  
   Serial.begin(115200);
- 
   icm.begin_I2C(0x69);
   icm2.begin_I2C(0x68);
-
  
   icm.setAccelRange(ICM20948_ACCEL_RANGE_2_G);
   icm2.setAccelRange(ICM20948_ACCEL_RANGE_2_G);
@@ -59,8 +65,28 @@ void setup(void) {
   icm.setGyroRateDivisor(255);
   icm2.setGyroRateDivisor(255);
 }
-
+    
 void loop() {
+char response = Serial.read();
+  if(response == 'f' or response == 'n'){
+    Serial.println(response);
+    if(response == 'f'){
+     digitalWrite(LED_Fall, HIGH); 
+     digitalWrite(LED_Non_Fall,LOW); 
+     
+    }
+    else{
+     digitalWrite(LED_Non_Fall,HIGH); 
+     digitalWrite(LED_Fall,LOW); 
+      }
+  }
+else {
+ digitalWrite(LED_Non_Fall,HIGH);
+ Data(); 
+  }
+}
+    
+void Data() {
   // sensor events
   sensors_event_t accel;
   sensors_event_t gyro;
