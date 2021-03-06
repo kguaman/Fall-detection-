@@ -32,7 +32,6 @@ y_test_pred
 '''
 display a table actual col and Predicted col 
 use to check accuarcy of SVM :
-'''
 
 df=pd.DataFrame({'Actual':Y_test, 'Predicted':y_test_pred})
 df.head(30)
@@ -44,3 +43,6 @@ print(int(accuracy))
 
 # plots a matrix 
 plot_confusion_matrix(ML, X_test, Y_test,) 
+
+'''
+
