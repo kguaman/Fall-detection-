@@ -3,7 +3,7 @@
    <br>self-project</p>
 
   <h2>About</h2>
-   This project utilizes MPU sensors to gather data and uses a Support Vector Machine to distinguish falling motions and non-falling movements Many fall detection devices    either have low accuracy when it comes to detecting falls or requires the user to press a button. I plan to create a device that has an high accuracy in fall dection.
+   This project utilizes MPU sensors to gather data and uses a Support Vector Machine to distinguish falling motions and non-falling movements.
 
 <h2>Goal</h2>
 Many fall detection devices either have low accuracy when it comes to detecting falls or requires the user to press a button. I plan to create a device that has an high accuracy in fall dection.
