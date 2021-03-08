@@ -33,10 +33,6 @@ float thetanew,phinew;
 float thetaold = 0;
 float phiold = 0;
 
-float current_mag_acc = 0;
-float current_mag_acc_2 = 0;   
-float current_mag_gyro = 0;
-float current_mag_gyro_2 = 0;
 
 Adafruit_ICM20948 icm;
 Adafruit_ICM20948 icm2;
